@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE - Tarihi Lezzet Durağı</title>
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Local CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- YENİ YÜKLEME EKRANI YAPISI -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">CAFE</div>
+        <div class="cup-container">
+            <div class="cup-body"></div>
+            <div class="cup-handle"></div>
+            <div class="steam-container">
+                <span class="steam"></span>
+                <span class="steam"></span>
+                <span class="steam"></span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <h1 class="logo">CAFE</h1>
+                </div>
+                <p class="slogan">1507'den Beri Kahramanmaraş'ın Lezzet Durağı</p>
+                <div class="history-badge">
+                    <i class="fas fa-history"></i> 5 Asırdır Hizmetinizde
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <div class="container">
+            <button class="category-btn active" data-category="all">Tüm Menü</button>
+            <button class="category-btn" data-category="bestsellers">Çok Satanlar</button>
+            <button class="category-btn" data-category="sandcoffee">Kumda Kahve Çeşitleri</button>
+            <button class="category-btn" data-category="espresso">Espresso Kahveler</button>
+            <button class="category-btn" data-category="hotdrinks">Sıcak İçecekler</button>
+            <button class="category-btn" data-category="colddrinks">Soğuk İçecekler</button>
+            <button class="category-btn" data-category="naturaljuices">Doğal Meyve Suları</button>
+            <button class="category-btn" data-category="gözleme-tost">Gözleme ve Tost</button>
+            <button class="category-btn" data-category="desserts">Pasta & Tatlılar</button>
+            <button class="category-btn" data-category="coldcoffee">Soğuk Kahveler</button>
+            <button class="category-btn" data-category="milkshakes">Milkshake Çeşitleri</button>
+            <button class="category-btn" data-category="frozen">Frozen Çeşitleri</button>
+            <button class="category-btn" data-category="cocktails">Kokteyl Çeşitleri</button>
+            <button class="category-btn" data-category="doublecoffees">Duble Kahveler</button>
+            <button class="category-btn" data-category="packagedcoffees">Paket Kahveler</button>
+            <button class="category-btn" data-category="gifts">Magnet & Hediyelikler</button>
+            <button class="category-btn" data-category="misc">Diğer</button>
+        </div>
+    </nav>
+
+    <section class="menu-container">
+        <div class="container">
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ADRESİNİZ VEYA KONUMUNUZ</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>TELEFON NUMARANIZ</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>E-POSTA ADRESİNİZ</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Çalışma Saatleri</h3>
+                    <div class="hours-info">
+                        <div class="hours-item">
+                            <span>Pazartesi - Cuma</span>
+                            <span>08:00 - 23:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Cumartesi</span>
+                            <span>09:00 - 00:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Pazar</span>
+                            <span>09:00 - 22:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hakkımızda</h3>
+                    <p>1507 yılından bu yana Kahramanmaraş'ta hizmet veren CAFE, tarihi dokusu ve eşsiz lezzetleriyle nesiller boyu misafirlerini ağırlamaktadır. Geleneksel tariflerimiz ve sıcak misafirperverliğimizle sizleri bekliyoruz.</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2023 CAFE. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Local JavaScript File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
