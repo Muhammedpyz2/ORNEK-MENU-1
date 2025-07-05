@@ -1302,3 +1302,29 @@ setTimeout(() => {
     // Render all menu items initially
     renderMenuItems();
 }, 2000);
+// ========== YUKARI ÇIK BUTONU FONKSİYONLARI ==========
+
+// HTML'den butonu seç
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Kullanıcı sayfayı belirli bir miktar aşağı kaydırdığında butonu göster
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    // 200 pikselden fazla kaydırıldığında butona 'show' class'ını ekle
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.classList.add("show");
+    } else {
+        scrollToTopBtn.classList.remove("show");
+    }
+}
+
+// Butona tıklandığında sayfanın en üstüne animasyonlu bir şekilde git
+scrollToTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
